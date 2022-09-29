@@ -1,0 +1,37 @@
+.social__list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Смена фона при ховере фокусе */
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  /* Выбирается элемент ".socials-icon" и к нему применяется hover и focus при наведении на родительский элемент ".social-link" */
+  &:hover .socials-icon,
+  &:focus .socials-icon {
+    fill: var(--white-color);
+  }
+}
+.socials-icon {
+  fill: #afb1b8;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

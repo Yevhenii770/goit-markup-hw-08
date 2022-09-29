@@ -1,0 +1,215 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: visibility 1000ms, opacity 1000ms;
+}
+
+.Modal-window:hover,
+.Modal-window:focus {
+  fill: var(--accent-color);
+}
+.modal {
+  /* Centering absolutely positioned elements */
+
+  padding: 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  /* end */
+
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  border-radius: 4px;
+  /* box-shadow: 0px 0px 100px 12px rgba(33, 150, 243, 0.59); */
+}
+.modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* modal form */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-form-group {
+  margin-bottom: 10px;
+}
+.register-title {
+  font-family: var(--main-fonts);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form-name,
+.form-tell,
+.form-mail {
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+/* Изменение окна для коментариев */
+.form-coment {
+  resize: none;
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.form-coment::placeholder {
+  color: #75757580;
+}
+
+.register-input {
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-size: 14px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-input:focus {
+  border-color: var(--accent-color);
+}
+
+.register-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.register-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+}
+
+/* checkbox btn */
+
+.register-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 30px;
+}
+
+.register-checkbox-item:checked + .register-checkbox-icon {
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  border-color: var(--accent-color);
+
+  background-origin: border-box;
+}
+
+.register-checkbox-icon {
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.register-checkbox-item {
+  /* скрываем оригинальный чек бокс */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* end */
+
+.register-form-text {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--modal-text-color);
+  margin-bottom: 4px;
+}
+
+.register-iconbox {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.register-icon {
+  fill: var(--primary-text-color);
+
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-input:focus ~ .register-icon {
+  fill: var(--accent-color);
+}
+
+.register-aprove {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.register-link {
+  color: var(--accent-color);
+}

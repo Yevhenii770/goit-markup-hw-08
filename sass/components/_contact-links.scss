@@ -1,0 +1,58 @@
+.contact-link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.telephone {
+  text-decoration: none;
+  font-family: var(--main-fonts);
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+.telephone:hover,
+.telephone:focus {
+  color: var(--accent-color);
+}
+/* currentColor НАСЛЕДОВАНИЯ ЦВЕТА И ЭФЕКТА ХОВЕРА У РОДИТЕЛЬСКОГО ЭЛЕМЕНТА */
+.contacts-mail,
+.contacts-smartphone {
+  fill: currentColor;
+}
+
+.header-list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  margin-left: auto;
+  gap: 30px;
+}

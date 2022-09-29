@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: var(--main-fonts);
+}
