@@ -31,11 +31,25 @@ ul {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 html {
@@ -257,12 +271,16 @@ body {
 }
 
 .benefits-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
 }
 
 .title {
@@ -283,10 +301,6 @@ body {
 
 .benefits-list .list-item {
   width: 270px;
-}
-
-.benefits-list .list-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .benefits {
@@ -369,9 +383,19 @@ body {
 }
 
 .card {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--bgc-teams);
+}
+@media screen and (min-width: 480px) {
+  .card {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .card__item {
   background: #ffffff;
@@ -391,6 +415,9 @@ body {
   padding-bottom: 30px;
 }
 .card__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 .card__position {
@@ -453,10 +480,20 @@ body {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 79px;
   /* Меняет цвет при ховере и фокусе ссылки */
   /* Выбирает элемент clients__link и применяет к нему ховер и фокус при наведении на линк! */
+}
+@media screen and (min-width: 0px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__list {
   display: -webkit-box;
@@ -471,26 +508,77 @@ body {
   border-radius: 4px;
   gap: 30px;
 }
-.clients__link {
-  width: 170px;
-  height: 92px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  -webkit-transition-property: border;
-  transition-property: border;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 0px) {
+  .clients__list {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 0px) {
+  .clients__link {
+    width: 210px;
+    height: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    -webkit-transition-property: border;
+    transition-property: border;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    -webkit-transition-property: border;
+    transition-property: border;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .clients__icon {
   fill: #afb1b8;

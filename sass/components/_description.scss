@@ -1,7 +1,9 @@
 .benefits-list {
+  justify-content: center;
   flex-wrap: wrap;
   list-style-type: none;
   display: flex;
+  gap: 30px;
 }
 .title {
   font-weight: 700;
@@ -20,9 +22,9 @@
 .benefits-list .list-item {
   width: 270px;
 }
-.benefits-list .list-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .benefits-list .list-item:not(:last-child) {
+//   margin-right: 30px;
+// }
 .benefits {
   padding-top: 94px;
   padding-bottom: 94px;

@@ -1,6 +1,13 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 79px;
+  @media screen and (min-width: 0px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__list {
     display: flex;
@@ -10,18 +17,50 @@
     gap: 30px;
   }
 
-  &__link {
-    width: 170px;
-    height: 92px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
+  &__list {
+    @media screen and (min-width: 0px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    @media screen and(min-width: 0px) {
+      width: 210px;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+
+      transition-property: border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+
+      transition-property: border;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 
   &__icon {
