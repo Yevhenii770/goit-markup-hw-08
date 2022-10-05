@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--Шапка-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a class="logo" href="index.html"><span class="Web">Web</span>Studio</a>
         <nav class="nav">
@@ -54,14 +54,22 @@
             </a>
           </li>
         </ul>
-      </div>
-    </header> -->
+        <button
+            class="menu-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#menu_40px"></use>
+            </svg>
+          </button>
+    </header>
 
     <!-- Основной контент сайта -->
     <main>
       <!--Герой-->
-      <!-- 
-      <section class="main">
+      <!-- <section class="main">
         <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="btn" type="button" value="" data-modal-open>
           Замовити послугу
@@ -73,50 +81,50 @@
       <section class="benefits">
         <div class="container">
           <h2 class="hidden">Наші особливості</h2>
-          <ul class="benefits-list">
-            <li class="list-item">
-              <div class="plus">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__box">
                 <svg class="benefits-icon" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="text">
+              <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits__text">
                 Ідейні міркування, i навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="list-item">
-              <div class="plus">
-                <svg class="benefits-icon" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__box">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="text">
+              <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits__text">
                 Завдання організації, особливо рамки i місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="list-item">
-              <div class="plus">
-                <svg class="benefits-icon" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__box">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">ПЛАНУВАННЯ</h3>
-              <p class="text">
+              <h3 class="benefits__title">ПЛАНУВАННЯ</h3>
+              <p class="benefits__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="list-item">
-              <div class="plus">
-                <svg class="benefits-icon" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__box">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="text">
+              <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -127,7 +135,7 @@
 
       <!-- Чим ми займаємося -->
 
-      <!-- <section class="section">
+      <section class="section example">
         <div class="container">
           <h2 class="container__title">Чим ми займаємося</h2>
           <ul class="works">
@@ -164,7 +172,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Наша команда-->
 
@@ -626,7 +634,8 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
+        
     <!-- footer-subscription -->
     <!-- <form>
           <div class="footer-subscription">
@@ -724,6 +733,48 @@
             </label>
           </div>
 
+          <!-- Mobile menu -->
+       <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#close_40px"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li>
+            <a href="" class="link">About</a>
+          </li>
+          <li>
+            <a href="" class="link">Products</a>
+          </li>
+          <li>
+            <a href="" class="link">Contacts</a>
+          </li>
+          <li>
+            <a href="" class="link">Career</a>
+          </li>
+        </ul>
+
+        <ul class="list">
+          <li>
+            <a href="" class="link">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a href="" class="link">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-socials list">
+          <li><a href="" class="link">Instagram </a></li>
+          <li><a href="" class="link">Twitter</a></li>
+          <li><a href="" class="link">Facebook</a></li>
+          <li><a href="" class="link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+
           <!--checkbox-->
           <label class="register-checkbox">
             <input
@@ -746,6 +797,18 @@
         </form>
       </div>
     </div>
+
+    <!-- modal window -->
     <script src="./js/modal.js"></script>
+
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
