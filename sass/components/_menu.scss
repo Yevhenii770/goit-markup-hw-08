@@ -18,6 +18,10 @@
   }
 }
 
+.menu-toggle {
+  border: none;
+  background-color: var(--wite-color);
+}
 .menu-container {
   position: fixed;
   top: 0;
@@ -30,7 +34,7 @@
   height: 100%;
   padding: 40px 48px;
 
-  background-color: #fff;
+  background-color: var(--white-color);
 
   transform: translateX(100%);
   transition: transform 400ms;
@@ -44,17 +48,114 @@
   }
 }
 
-.mobile-menu {
+.menu-nav {
+  display: flex;
   margin-bottom: auto;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (min-width: 0px) and (max-width: 479px) {
+    gap: 15px;
+  }
 }
 
 .menu-toggle {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 15px;
 }
-
+.menu-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .mobile-socials {
   display: flex;
-  margin-top: 40px;
+  margin-top: 64px;
+  gap: 10px;
+
+  @media (min-width: 0px) and (max-width: 479px) {
+    flex-direction: column;
+    margin-top: 35px;
+  }
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+
+  @media (min-width: 0px) and (max-width: 479px) {
+    font-size: 32px;
+    line-height: calc(36 / 32);
+  }
+}
+.menu-number {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(40 / 24);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+
+  @media (min-width: 0px) and (max-width: 479px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+}
+
+.menu-email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+
+  @media (min-width: 0px) and (max-width: 479px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+}
+
+.mobile-socials-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+
+  @media (min-width: 0px) and (max-width: 479px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+.mobile-line::after {
+  content: "";
+
+  display: inline-block;
+  width: 0.2px;
+  height: 22px;
+  background-color: #21212133;
+
+  @media (min-width: 0px) and (max-width: 479px) {
+    display: none;
+  }
+}
+.mobile-line {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-icon:hover,
+.menu-icon:focus {
+  fill: var(--accent-color);
 }

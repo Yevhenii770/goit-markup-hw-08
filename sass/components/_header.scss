@@ -9,10 +9,6 @@
   display: flex;
   text-align: center;
   align-items: center;
-
-  // @media screen and (min-width: 480px) {
-  //   height: 60px;
-  // }
 }
 
 .link {
@@ -33,16 +29,4 @@
 }
 .border {
   border-bottom: 1px solid #ececec;
-}
-
-.nav {
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    display: none;
-  }
-}
-
-.header-list {
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    display: none;
-  }
 }
