@@ -41,8 +41,12 @@
   letter-spacing: 0.03em;
 }
 .benefits__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767.5px) {
     width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
   }
 
   @media screen and (min-width: 1200px) {

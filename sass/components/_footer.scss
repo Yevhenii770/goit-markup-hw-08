@@ -1,7 +1,14 @@
 .footer-container {
-  margin-right: 70px;
+  @media screen and (min-width: 320px) and (max-width: 767.5px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer {
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
@@ -76,11 +83,17 @@
 .footer-box {
   display: flex;
   align-items: baseline;
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @media screen and (min-width: 320px) and (max-width: 767.5px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /* Выбирается элемент ".footer-socials-icon" и к нему применяется hover и focus при наведении на родительский элемент ".social-link" */
@@ -99,6 +112,11 @@
 
 .footer-subscription-label {
   display: flex;
+
+  @media screen and (min-width: 320px) and (max-width: 767.5px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .footer-subscription-title {
@@ -110,10 +128,25 @@
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+
+  @media screen and (min-width: 3200px) and (max-width: 767.5px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-link {
-  margin-right: auto;
+  @media screen and (min-width: 320px) and (max-width: 767.5px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 767.5px) {
+    margin-right: 89px;
+  }
 }
 
 .footer-subscription-mail {
@@ -129,6 +162,13 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--white-color);
+
+  @media screen and (min-width: 0px) and (max-width: 767.5px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 .footer-subscription-mail::placeholder {
