@@ -14,43 +14,51 @@
   </head>
   <body>
     <!--Шапка -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a class="logo" href="index.html"><span class="Web">Web</span>Studio</a>
         <nav class="nav">
           <ul class="site-nav list">
             <li class="nav-item">
-              <a class="link" href="./index.html">Студія</a>
+              <a class="link current" href="./index.html">Студія</a>
             </li>
             <li class="nav-item">
-              <a class="link current" href="./portfolio.html">Портфоліо</a>
+              <a class="link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav-item"><a class="link" href="">Контакти</a></li>
+            <li class="nav-item">
+              <a class="link" href="">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-list">
           <li class="list-item">
-            
-
             <a class="contact-link mail" href="mailto:info@devstudio.com"
               ><svg class="contacts-mail" width="16px" height="12px">
-              <use href="./images/icons.svg#envelope-hover"></use>
-            </svg>info@devstudio.com
-              </a
-            >
+                <use href="./images/icons.svg#envelope-hover"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="list-item">
-            
-
-            <a class="telephone mail" href="tel:+380961111111"> <svg class="contacts-smartphone" width="16px" height="12px">
-              <use href="./images/icons.svg#smartphone"></use>
-            </svg>+38096 111 11 11
-              
+            <a class="telephone mail" href="tel:+380961111111">
+              <svg class="contacts-smartphone" width="10px" height="16px">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              +38096 111 11 11
             </a>
           </li>
         </ul>
-      </div>
-    </header> -->
+        <button
+            class="menu-btn js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#menu_40px"></use>
+            </svg>
+          </button>
+    </header>
 
     <!-- Секция -->
     <main>
@@ -260,7 +268,7 @@
       </section>
     </main>
     <!--Подвал-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-box">
         <div class="footer-container">
           <a class="footer-logo" href="./index.html"
@@ -347,16 +355,17 @@
               </a>
             </li>
           </ul>
-        </div> -->
-          <!-- footer-subscription -->
-        <!-- <form action="#">
+        </div>
+          
+        
+    <!-- footer-subscription -->
+    <form class="footer-box">
           <div class="footer-subscription">
             <span class="footer-subscription-title">
-                Підпишіться на розсилку</span
-              >
+              Підпишіться на розсилку</span
+            >
 
             <label class="footer-subscription-label">
-              
               <input
                 class="footer-subscription-mail"
                 type="email"
@@ -364,15 +373,72 @@
                 placeholder="E-mail"
               />
               <button class="footer-subscription-btn" type="submit">
-              Підписатися
-              <svg class="footer-subscription-plane" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+                Підписатися
+                <svg class="footer-subscription-plane" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </label>
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
+    
+    <!-- Mobile menu -->
+       <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#close_40px"></use>
+          </svg>
+        </button>
+
+        <ul class="menu-nav list">
+          <li>
+            <a href="./index.html" class="menu-link link">Студія</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="menu-link link">Портфоліо</a>
+          </li>
+          <li>
+            <a href="" class="menu-link link">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="menu-contact list">
+          <li>
+            <a href="tel:+380961111111" class="menu-number link">+38 096 111 11 11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="menu-email link">info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-socials ">
+          <li class="mobile-line"><a href="https://www.instagram.com/" class="mobile-socials-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram">Instagram </a></li>
+          <li class="mobile-line"><a href="https://twitter.com/" class="mobile-socials-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter">Twitter</a></li>
+          <li class="mobile-line"><a href="https://www.facebook.com/" class="mobile-socials-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook">Facebook</a></li>
+          <li class=""><a href="https://www.linkedin.com/" class="mobile-socials-link link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+    <!-- mobile menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

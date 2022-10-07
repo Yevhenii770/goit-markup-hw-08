@@ -107,6 +107,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .border {
@@ -122,6 +131,11 @@ body {
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
   margin-right: 93px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .logo {
+    margin-right: 74px;
+  }
 }
 
 .Web {
@@ -152,6 +166,12 @@ body {
   gap: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .mail {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .telephone {
@@ -191,17 +211,32 @@ body {
 }
 
 .header-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  text-decoration: none;
   margin-left: auto;
-  gap: 30px;
+  gap: 8px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 @media screen and (min-width: 0px) and (max-width: 767.5px) {
   .header-list {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .mb {
+    margin-bottom: 10px;
   }
 }
 
@@ -221,11 +256,6 @@ body {
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
-}
-
-.site-nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .item + .item {
@@ -451,6 +481,14 @@ body {
     padding-bottom: 118px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .main {
+    width: 768px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .main {
     padding-top: 200px;
@@ -475,11 +513,23 @@ body {
   margin-top: 0;
   color: var(--white-color);
 }
-@media screen and (min-width: 0px) and (max-width: 767.5px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .main__title {
-    font-style: normal;
+    font-size: 21px;
+    line-height: 1.7142857143;
+    width: 317px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767.5px) {
+  .main__title {
     font-size: 26px;
     line-height: 1.6153846154;
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .main__title {
+    padding-bottom: 30px;
     width: 360px;
   }
 }
@@ -509,6 +559,11 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .btn {
+    margin-top: 0px;
+  }
 }
 
 .benefits {
@@ -705,6 +760,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 .card__position {
@@ -858,6 +915,12 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .footer-container {
+    display: inline-block;
+    margin-left: 76px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-container {
     margin-right: 70px;
@@ -869,6 +932,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer-logo {
@@ -986,6 +1055,15 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 /* Выбирается элемент ".footer-socials-icon" и к нему применяется hover и focus при наведении на родительский элемент ".social-link" */
 .footer-social-link:hover .footer-socials-icon,
@@ -1000,6 +1078,21 @@ body {
 }
 
 /* Футер форма регистрации */
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .footer-subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer-subscription-label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1012,6 +1105,17 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .footer-subscription-label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1039,16 +1143,25 @@ body {
 @media screen and (min-width: 320px) and (max-width: 767.5px) {
   .footer-link {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-link {
-    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 767.5px) {
   .footer-link {
     margin-right: 89px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .footer-link {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-link {
+    margin-right: auto;
   }
 }
 
@@ -1076,6 +1189,12 @@ body {
             justify-content: center;
     margin-bottom: 20px;
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .footer-subscription-mail {
+    margin-bottom: 20px;
+    max-width: 450px;
   }
 }
 
@@ -1597,8 +1716,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

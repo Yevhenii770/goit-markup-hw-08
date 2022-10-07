@@ -16,6 +16,11 @@
   gap: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .telephone {
@@ -50,12 +55,26 @@
 }
 
 .header-list {
-  display: flex;
-  list-style: none;
-  text-decoration: none;
   margin-left: auto;
-  gap: 30px;
+  gap: 8px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   @media screen and (min-width: 0px) and (max-width: 767.5px) {
     display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.mb {
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    margin-bottom: 10px;
   }
 }

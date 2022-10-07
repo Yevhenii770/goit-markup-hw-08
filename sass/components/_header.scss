@@ -26,6 +26,11 @@
 
 .site-nav {
   display: flex;
+
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+  }
 }
 .border {
   border-bottom: 1px solid #ececec;
