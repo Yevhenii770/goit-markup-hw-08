@@ -49,5 +49,11 @@
 
   &__item {
     text-align: center;
+
+    @media screen and (max-width: 767.5px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+    }
   }
 }
