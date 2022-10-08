@@ -500,12 +500,17 @@ body {
     padding-bottom: 200px;
     text-align: center;
     background-color: #2f303a;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/logo.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/logo.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/hero-img-mob-@1x.png);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/hero-img-mob-@1x.png);
     max-width: 1600px;
     max-height: 600px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main {
+    background-image: url(../images/main/hero-img-mob-@1x.png);
   }
 }
 
