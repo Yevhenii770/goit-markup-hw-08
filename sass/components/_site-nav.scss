@@ -18,8 +18,6 @@
 .site-nav .item + .item {
   margin-right: 50px;
 }
-.site-nav .link.current {
-  color: var(--accent-color);
-  border-bottom: 4px solid var(--accent-color);
-  border-radius: 1px;
+
+.current::after {
 }

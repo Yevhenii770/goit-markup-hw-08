@@ -21,6 +21,12 @@
     border-radius: 0px 0px 4px 4px;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    .card__item {
+      width: calc((100% - 60px) / 2);
+    }
+  }
+
   &__name {
     font-weight: 500;
     font-size: 16px;
@@ -40,6 +46,12 @@
     gap: 30px;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1119.5px) {
+    .card__list {
+      margin: -15px;
+    }
+  }
+
   &__position {
     color: var(--title-text-color);
     line-height: calc(19 / 16);
@@ -56,4 +68,8 @@
       width: 450px;
     }
   }
+}
+
+.container__title {
+  margin-bottom: 50px;
 }
