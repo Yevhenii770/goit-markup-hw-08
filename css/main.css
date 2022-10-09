@@ -1086,6 +1086,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .contacts-adress {
+    margin-top: 20px;
+  }
+}
 
 .footer-contacts {
   -webkit-box-orient: vertical;

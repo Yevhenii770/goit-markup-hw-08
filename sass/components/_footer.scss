@@ -55,6 +55,10 @@
 .contacts-adress {
   font-style: normal;
   display: flex;
+
+  @media screen and (min-width: 480px) {
+    margin-top: 20px;
+  }
 }
 .footer-contacts {
   flex-direction: column;
