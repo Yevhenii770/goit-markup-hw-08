@@ -508,14 +508,14 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-img-mob-@2x.jpg);
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1199.5px) {
+@media screen and (min-width: 769px) {
   .main {
     max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header-img-tab-@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-img-tab-@1x.jpg);
   }
 }
-@media screen and (min-width: 481px) and (max-width: 1199.5px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1199.5px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1199.5px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 1199.5px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .main {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/header-img-tab-@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-img-tab-@2x.jpg);
@@ -1381,7 +1381,7 @@ body {
 
 .modal {
   /* Centering absolutely positioned elements */
-  padding: 40px;
+  padding: 30px;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1398,12 +1398,14 @@ body {
 }
 @media screen and (min-width: 480px) and (max-width: 1119.5px) {
   .modal {
+    padding: 40px;
     width: 450px;
     height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    padding: 40px;
     width: 528px;
     height: 581px;
   }
