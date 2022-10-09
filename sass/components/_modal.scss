@@ -217,6 +217,11 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+
+  @media screen and (min-width: 480px) and (max-width: 1199.5px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
 }
 
 .register-link {
