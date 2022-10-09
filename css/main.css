@@ -1388,8 +1388,8 @@ body {
   top: 50%;
   left: 50%;
   /* end */
-  width: 528px;
-  height: 581px;
+  width: 300px;
+  height: 575px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1400,6 +1400,12 @@ body {
   .modal {
     width: 450px;
     height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1458,6 +1464,12 @@ body {
   text-align: center;
   margin-bottom: 12px;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .register-title {
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+}
 
 .form-name,
 .form-tell,
@@ -1466,6 +1478,13 @@ body {
   height: 40px;
   padding-left: 42px;
   padding-right: 42px;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .form-name,
+.form-tell,
+.form-mail {
+    width: 250px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 1199.5px) {
   .form-name,
@@ -1513,6 +1532,11 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .register-input {
+    font-size: 12px;
+  }
 }
 
 .register-input:focus {
