@@ -537,6 +537,8 @@ body {
 }
 
 .main__title {
+  top: 50%;
+  bottom: 50%;
   font-weight: 900;
   margin-left: auto;
   margin-right: auto;
@@ -544,19 +546,16 @@ body {
   letter-spacing: 0.06em;
   margin-top: 0;
   color: var(--white-color);
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .main__title {
-    font-size: 21px;
-    line-height: 1.7142857143;
-    width: 317px;
-  }
+  font-size: 21px;
+  line-height: 1.7142857143;
+  width: 317px;
+  padding-bottom: 30px;
+  font-family: var(--main-fonts);
 }
 @media screen and (min-width: 480px) and (max-width: 767.5px) {
   .main__title {
     font-size: 26px;
     line-height: 1.6153846154;
-    width: 360px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.5px) {
@@ -567,8 +566,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .main__title {
-    margin-bottom: 30px;
-    font-family: var(--main-fonts);
     font-size: 44px;
     line-height: 1.3636363636;
     width: 696px;
@@ -576,7 +573,6 @@ body {
 }
 
 .btn {
-  margin-top: 40px;
   display: inline-block;
   padding: 10px 32px;
   margin-left: auto;
@@ -1470,6 +1466,13 @@ body {
   height: 40px;
   padding-left: 42px;
   padding-right: 42px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199.5px) {
+  .form-name,
+.form-tell,
+.form-mail {
+    width: 369px;
+  }
 }
 
 /* Изменение окна для коментариев */

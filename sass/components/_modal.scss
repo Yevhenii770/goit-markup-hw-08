@@ -36,6 +36,7 @@
     height: 609px;
   }
 }
+
 .modal-btn {
   position: absolute;
   top: 10px;
@@ -88,6 +89,10 @@
   height: 40px;
   padding-left: 42px;
   padding-right: 42px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199.5px) {
+    width: 369px;
+  }
 }
 
 /* Изменение окна для коментариев */
