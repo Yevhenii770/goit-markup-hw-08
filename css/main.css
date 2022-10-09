@@ -894,11 +894,6 @@ body {
     gap: 30px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 1199.5px) {
-  .clients .clients__list {
-    gap: 30px;
-  }
-}
 @media screen and (min-width: 0px) {
   .clients__link {
     width: 210px;
@@ -1031,7 +1026,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-box {
-    max-width: 768px;
+    width: 768px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

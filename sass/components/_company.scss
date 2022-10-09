@@ -24,11 +24,6 @@
       gap: 30px;
     }
   }
-  @media screen and (min-width: 480px) and (max-width: 1199.5px) {
-    .clients__list {
-      gap: 30px;
-    }
-  }
 
   &__link {
     @media screen and(min-width: 0px) {
