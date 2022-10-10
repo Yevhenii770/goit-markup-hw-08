@@ -1278,7 +1278,6 @@ body {
   outline: none;
   width: 358px;
   height: 50px;
-  margin-right: 12px;
   padding-left: 16px;
   padding-right: 16px;
   background-color: #2f303a;
@@ -1303,6 +1302,11 @@ body {
   .footer-subscription-mail {
     margin-bottom: 20px;
     max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription-mail {
+    margin-right: 12px;
   }
 }
 
@@ -1724,6 +1728,7 @@ body {
 }
 .examples__item {
   width: 370px;
+  border: 1px solid #eeeeee;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1733,10 +1738,16 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767.5px) {
   .examples__item {
-    width: calc((100% - 60px) / 2);
-    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
+  .examples__item {
+    width: calc((100% - 30px) / 2);
   }
 }
 .examples__item:hover, .examples__item:focus {

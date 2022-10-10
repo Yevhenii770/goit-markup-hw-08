@@ -190,7 +190,6 @@
   outline: none;
   width: 358px;
   height: 50px;
-  margin-right: 12px;
   padding-left: 16px;
   padding-right: 16px;
   background-color: #2f303a;
@@ -208,6 +207,9 @@
   @media screen and (min-width: 768px) and (max-width: 1199.5px) {
     margin-bottom: 20px;
     max-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 
